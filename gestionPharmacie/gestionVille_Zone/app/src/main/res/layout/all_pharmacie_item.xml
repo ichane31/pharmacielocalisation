@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/relativeparentPhar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/zonePhoto"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_holiday_village_24"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nomZone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@+id/zonePhoto"
+                android:text="Nom Zone"
+                android:textSize="20dp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/nomPharmacie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zonePhoto"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="18dp"
+                android:padding="10dp"
+                android:text="Nom Pharmacie"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/linearchildPhar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/adressePharmacie"
+                android:padding="6dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:text="Adresse de la Pharmacie"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_phone_24"
+                    android:textStyle="bold"
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/numPhonePharm"
+                    android:layout_width="wrap_content"
+                    android:text="02837949002"
+                    android:textSize="18dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/btnLoc"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_add_location_24"
+                    android:textStyle="bold"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="70dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ville : "
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:textSize="22dp"/>
+                <TextView
+                    android:id="@+id/nomVillePhar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nom de la Ville "
+                    android:textSize="21dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_pharmacie">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ma.projet.gestionville_zone.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_ville"
+        android:name="ma.projet.gestionville_zone.ui.ville.VilleFragment"
+        android:label="@string/menu_vilee"
+        tools:layout="@layout/fragment_ville" />
+
+    <fragment
+        android:id="@+id/nav_zone"
+        android:name="ma.projet.gestionville_zone.ui.zone.ZoneFragment"
+        android:label="@string/menu_zone"
+        tools:layout="@layout/fragment_zone" />
+
+    <fragment
+        android:id="@+id/nav_pharmacie"
+        android:name="ma.projet.gestionville_zone.ui.Pharmacie"
+        android:label="@string/menu_pharmacie"
+        tools:layout="@layout/fragment_pharmacie" />
+</navigation>
